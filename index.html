@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wanderly: places worth the journey, from quiet coasts to old cities.">
+  <title>Wanderly | Places worth the journey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable skip-link p-2" href="#main-content">Skip to main content</a>
+
+  <!-- Navbar: collapses into a hamburger below lg -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fs-3 fw-bold" href="#home">Wanderly</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-warning btn-sm ms-lg-3 fw-semibold" href="#contact">Plan a trip</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero: two columns (col-lg-6) -->
+    <header id="home" class="bg-dark text-white py-5">
+      <div class="container py-lg-4 px-sm-2">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-6">
+            <h1 class="hero-title fw-bold mb-3">Go where the <span class="sun">road gets quiet.</span></h1>
+            <p class="lead opacity-75 mb-4">Quiet coasts, old streets and high trails, chosen by people who actually went. Pick a place and we'll help you plan the rest.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <a class="btn btn-warning btn-lg fw-semibold" href="#destinations">See destinations</a>
+              <a class="btn btn-outline-light btn-lg" href="#gallery">Browse the gallery</a>
+            </div>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Quick links by trip type">
+              <a class="btn btn-outline-light" href="#destinations">Coast</a>
+              <a class="btn btn-outline-light" href="#destinations">City</a>
+              <a class="btn btn-outline-light" href="#destinations">Mountains</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img class="hero-img shadow-lg"
+                 src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=85"
+                 alt="Mountain lake surrounded by green hills at sunrise">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Carousel: three slides, indicators and controls, aligned in the grid -->
+    <section id="gallery" class="py-5" aria-labelledby="gallery-heading">
+      <div class="container px-sm-2">
+        <div class="row justify-content-between align-items-end g-3 mb-4">
+          <div class="col-12 col-md-8">
+            <h2 id="gallery-heading" class="display-6 fw-bold mb-0">Three views, three moods</h2>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <p class="text-secondary mb-0">Use the arrows or dots to look around.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div id="travelCarousel" class="carousel slide carousel-fade rounded-4 overflow-hidden shadow" data-bs-ride="carousel" aria-label="Featured travel photos">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Mountains"></button>
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1" aria-label="Slide 2: Coast"></button>
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2" aria-label="Slide 3: City"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=85" class="d-block w-100 carousel-image" alt="Dramatic mountain peaks beneath a blue sky">
+                  <div class="carousel-caption text-start bg-dark bg-opacity-75 rounded-3 p-3">
+                    <h3 class="h4 mb-1">Make room for wonder</h3>
+                    <p class="d-none d-sm-block mb-0">Wide-open mountain country and clean air.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1600&q=85" class="d-block w-100 carousel-image" alt="Tropical beach with turquoise water and palm trees">
+                  <div class="carousel-caption text-start bg-dark bg-opacity-75 rounded-3 p-3">
+                    <h3 class="h4 mb-1">Follow the blue</h3>
+                    <p class="d-none d-sm-block mb-0">Slow mornings with salt in the air.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=85" class="d-block w-100 carousel-image" alt="City skyline glowing at twilight">
+                  <div class="carousel-caption text-start bg-dark bg-opacity-75 rounded-3 p-3">
+                    <h3 class="h4 mb-1">Get lost in the city</h3>
+                    <p class="d-none d-sm-block mb-0">Local food, side streets and late light.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous slide</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next slide</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards: three columns (col-lg-4) -->
+    <section id="destinations" class="bg-sand py-5" aria-labelledby="destinations-heading">
+      <div class="container px-sm-2 py-lg-4">
+        <h2 id="destinations-heading" class="display-6 fw-bold mb-4">Where to next?</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85" class="card-img-top destination-image" alt="Colorful buildings along the Italian coast">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge text-bg-dark">Coast</span><span class="small text-secondary">From $480</span>
+                </div>
+                <h3 class="card-title h4">Italian Riviera</h3>
+                <p class="card-text text-secondary">Pastel villages, clear water and long lunches by the sea.</p>
+                <a href="#contact" class="btn btn-outline-primary mt-auto align-self-start">Plan this trip</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" class="card-img-top destination-image" alt="Traditional Japanese street with historic architecture">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge text-bg-dark">City</span><span class="small text-secondary">From $620</span>
+                </div>
+                <h3 class="card-title h4">Kyoto, Japan</h3>
+                <p class="card-text text-secondary">Quiet temples, lantern-lit lanes and seasonal gardens.</p>
+                <a href="#contact" class="btn btn-outline-primary mt-auto align-self-start">Plan this trip</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+            <article class="card h-100 border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=85" class="card-img-top destination-image" alt="Traveler looking out at a scenic mountain valley">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge text-bg-dark">Mountains</span><span class="small text-secondary">From $350</span>
+                </div>
+                <h3 class="card-title h4">Alpine trails</h3>
+                <p class="card-text text-secondary">Fresh air, steady climbs and views that stay with you.</p>
+                <a href="#contact" class="btn btn-outline-primary mt-auto align-self-start">Plan this trip</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two columns (col-lg-6) -->
+    <section class="py-5" aria-labelledby="why-heading">
+      <div class="container px-sm-2 py-lg-4">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-6">
+            <img class="img-fluid rounded-4 shadow-sm feature-photo" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=85" alt="Small boat on a clear alpine lake surrounded by mountains">
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2 id="why-heading" class="display-6 fw-bold mb-3">Plan less, notice more</h2>
+            <p class="text-secondary mb-4">The best trips leave space for surprises. Wanderly gives you a short list of good places and a plan that fits your pace.</p>
+            <div class="d-flex gap-3 mb-3">
+              <span class="icon-dot flex-shrink-0" aria-hidden="true">1</span>
+              <div><h3 class="h5 mb-1">Pick a place</h3><p class="text-secondary mb-0">Every destination is tested and described honestly.</p></div>
+            </div>
+            <div class="d-flex gap-3 mb-3">
+              <span class="icon-dot flex-shrink-0" aria-hidden="true">2</span>
+              <div><h3 class="h5 mb-1">Tell us your pace</h3><p class="text-secondary mb-0">Slow and relaxed, or active from sunrise.</p></div>
+            </div>
+            <div class="d-flex gap-3 mb-4">
+              <span class="icon-dot flex-shrink-0" aria-hidden="true">3</span>
+              <div><h3 class="h5 mb-1">Get a simple plan</h3><p class="text-secondary mb-0">Routes, stays and timing, without the noise.</p></div>
+            </div>
+            <a class="btn btn-primary btn-lg" href="#contact">Start planning</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form (no JavaScript needed: the browser handles validation) -->
+    <section id="contact" class="bg-sand py-5" aria-labelledby="contact-heading">
+      <div class="container px-sm-2 py-lg-4">
+        <div class="row justify-content-center g-4 g-lg-5">
+          <div class="col-12 col-lg-5">
+            <h2 id="contact-heading" class="display-6 fw-bold mb-3">Tell us about your trip</h2>
+            <p class="text-secondary mb-3">Share a few details and we'll reply with a short list of ideas.</p>
+            <p class="mb-0">hello@wanderly.example</p>
+          </div>
+          <div class="col-12 col-lg-7">
+            <form class="bg-white rounded-4 shadow-sm p-4 p-md-5" action="#contact" method="get">
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="fullName" class="form-label">Full name</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="name" required>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="emailAddress" class="form-label">Email address</label>
+                  <div class="input-group">
+                    <span class="input-group-text" aria-hidden="true">@</span>
+                    <input type="email" class="form-control" id="emailAddress" name="emailAddress" autocomplete="email" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="tripType" class="form-label">What kind of trip?</label>
+                  <select class="form-select" id="tripType" name="tripType" required>
+                    <option value="" selected disabled>Choose one</option>
+                    <option>Coast</option><option>City</option><option>Mountains</option><option>Not sure yet</option>
+                  </select>
+                </div>
+                <fieldset class="col-12">
+                  <legend class="form-label fs-6 mb-2">Travel pace</legend>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pace" id="slowPace" value="Slow" checked>
+                    <label class="form-check-label" for="slowPace">Slow and relaxed</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pace" id="activePace" value="Active">
+                    <label class="form-check-label" for="activePace">Active</label>
+                  </div>
+                </fieldset>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message <span class="text-secondary">(optional)</span></label>
+                  <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="yes" id="updates" name="updates">
+                    <label class="form-check-label" for="updates">Send me occasional travel ideas</label>
+                  </div>
+                </div>
+                <div class="col-12 d-flex flex-wrap gap-2">
+                  <button type="submit" class="btn btn-primary btn-lg">Send message</button>
+                  <button type="reset" class="btn btn-outline-secondary btn-lg">Clear form</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container px-sm-2">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <span class="fs-4 fw-bold">Wanderly</span>
+          <p class="small opacity-75 mb-0">Collect moments, not just destinations.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="link-light me-3" href="#home">Home</a>
+          <a class="link-light me-3" href="#destinations">Destinations</a>
+          <a class="link-light" href="#contact">Contact</a>
+          <p class="small opacity-75 mt-3 mb-0">&copy; 2026 Wanderly. Student project.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap's own bundle: required for the navbar toggler and carousel -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
